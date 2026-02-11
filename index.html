@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lisa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background: #111; /* clean background for PC side spaces */
+    font-family: 'Pacifico', cursive;
+    overflow-x: hidden;
+}
+
+/* Floating Pink Title */
+.title {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 65px;
+    color: #ff4da6;
+    text-shadow: 0 0 20px rgba(255, 20, 147, 0.8);
+    z-index: 1000;
+    animation: float 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Fullscreen Scroll Sections */
+.section {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    animation: fadeIn 1s ease forwards;
+}
+
+.section img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;   /* NO CROPPING */
+}
+
+/* Smooth fade effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .title {
+        font-size: 42px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="title">Lisa 💖</div>
+
+<!-- IMAGE 1 -->
+<div class="section">
+    <img src="https://i.ibb.co/TBgY0brC/b4b97b83-b50b-4c10-b7a6-2623a2b80a4a.jpg" alt="Image 1">
+</div>
+
+<!-- IMAGE 2 -->
+<div class="section">
+    <img src="https://i.ibb.co/1Yrq3y9S/fdf9a64f-74d8-4028-8b15-7ccf44fdd123.jpg" alt="Image 2">
+</div>
+
+<!-- IMAGE 3 -->
+<div class="section">
+    <img src="https://i.ibb.co/r238wQRC/d054b4c7-36be-4f22-912f-ab6591e07d52.jpg" alt="Image 3">
+</div>
+
+<!-- IMAGE 4 -->
+<div class="section">
+    <img src="https://i.ibb.co/8nbrZ333/c22e08e1-d6e5-4b05-9313-49d7d12aa806.jpg" alt="Image 4">
+</div>
+
+<!-- EMPTY IMAGE SPACES UP TO 50 -->
+
+<div class="section"><img src="https://i.ibb.co/yFPztHk9/d5e69dbe-3549-41fa-b0ff-f57e3a4719e8.jpg" alt="Image 5"></div>
+
+<div class="section"><img src="https://i.ibb.co/RTtbbbdb/22462865-e4a1-4586-a74b-d6202da09087.jpg" alt="Image 6"></div>
+
+<div class="section"><img src="https://i.ibb.co/xKt35TQB/9da81063-8d8e-4d94-a848-cd87b4bc31eb.jpg" alt="Image 7"></div>
+
+<div class="section"><img src="https://i.ibb.co/KjnkqfmP/63c158d7-3666-4749-a197-45fdfb34283a.jpg" alt="Image 8"></div>
+
+<div class="section"><img src="https://i.ibb.co/TBgY0brC/b4b97b83-b50b-4c10-b7a6-2623a2b80a4a.jpg" alt="Image 9"></div>
+
+<div class="section"><img src="https://i.ibb.co/gMwkTD3B/38898346-b939-44c9-a861-1b1ec123d36e.jpg" alt="Image 10"></div>
+
+<div class="section"><img src="https://i.ibb.co/VYJY5YYj/904dfa00-74dd-4c69-95b0-963ee2574b9d.jpg" alt="Image 11"></div>
+
+<div class="section"><img src="https://i.ibb.co/3mL8YKb1/cfaf5632-2460-4ee2-b258-fe7a18fee0db.jpg" alt="Image 12"></div>
+
+<div class="section"><img src="https://i.ibb.co/TDwQRK2z/8e2a1d3c-b9d3-4630-a974-450b56c59265.jpg" alt="Image 13"></div>
+
+<div class="section"><img src="https://i.ibb.co/mrmZRdKs/1a97c9a6-de12-46db-b28a-11c7b89cdecd.jpg" alt="Image 14"></div>
+
+<div class="section"><img src="https://i.ibb.co/V08jSS3Q/6801a373-08d7-4428-9102-97772f494743.jpg" alt="Image 15"></div>
+
+<div class="section"><img src="https://i.ibb.co/dwGzz7h4/c7eac874-3c62-409a-b1f2-e07a1a175522.jpg" alt="Image 16"></div>
+
+<div class="section"><img src="https://i.ibb.co/bjhkDttj/90215e55-76ac-4d6b-8603-4bfcab6a7357.jpg" alt="Image 17"></div>
+
+<div class="section"><img src="https://i.ibb.co/1Yrq3y9S/fdf9a64f-74d8-4028-8b15-7ccf44fdd123.jpg" alt="Image 18"></div>
+
+<div class="section"><img src="https://i.ibb.co/cSnpBrVK/09757fcd-f312-49a3-adcf-35ca6a9d4678.jpg" alt="Image 19"></div>
+
+<div class="section"><img src="https://i.ibb.co/0jQHkrdz/a0411d3f-7224-4e67-8eef-1830ce23e287.jpg" alt="Image 20"></div>
+
+<div class="section"><img src="https://i.ibb.co/cSh1CntB/2994a20e-62e3-496e-9c2a-96da6296c972.jpg" alt="Image 21"></div>
+
+<div class="section"><img src="https://i.ibb.co/8nbrZ333/c22e08e1-d6e5-4b05-9313-49d7d12aa806.jpg" alt="Image 22"></div>
+
+<div class="section"><img src="https://i.ibb.co/pvvDTTC9/4c07c7fb-bb3a-4193-acc8-6b66f8985504.jpg" alt="Image 23"></div>
+
+<div class="section"><img src="https://i.ibb.co/ZRYvRShX/f349fb65-6c1b-42d9-bfa9-21ffc0d1d27a.jpg" alt="Image 24"></div>
+
+<div class="section"><img src="https://i.ibb.co/JWQTMXKR/d96a7a20-cb87-4057-8f04-c60bf581242a.jpg" alt="Image 25"></div>
+
+<div class="section"><img src="https://i.ibb.co/tM7gvWTQ/289d678f-6fdd-475d-a90c-29b604e26540.jpg" alt="Image 26"></div>
+
+<div class="section"><img src="https://i.ibb.co/r238wQRC/d054b4c7-36be-4f22-912f-ab6591e07d52.jpg" alt="Image 27"></div>
+<div class="section"><img src="https://i.ibb.co/r2kCMYzd/c35429b9-31e5-4be7-aa8b-7734db6bdd3c.jpg" alt="Image 28"></div>
+<div class="section"><img src="https://i.ibb.co/21N3bfGL/21551e29-ed83-448a-aabf-4521161878ad.jpg" alt="Image 29"></div>
+<div class="section"><img src="https://i.ibb.co/mV4HRwxM/6c5cb4cf-4ef2-44ab-8adc-e615dda21724.jpg" alt="Image 30"></div>
+<div class="section"><img src="https://i.ibb.co/sdXB0qXK/3c3c76fb-fcf2-4534-b79a-0a38c9743c5f.jpg" alt="Image 31"></div>
+<div class="section"><img src="https://i.ibb.co/Lhs1Z1gZ/7d66e4c9-25dc-4734-b141-7b61e33aaaa8.jpg" alt="Image 32"></div>
+<div class="section"><img src="https://i.ibb.co/g22G5kv/5edcf828-8333-46c7-ad40-6d11ffc3800d.jpg" alt="Image 33"></div>
+<div class="section"><img src="https://i.ibb.co/997KS0vP/d0b4b48d-8eeb-4274-973a-d09bdd1cbf76.jpg" alt="Image 34"></div>
+<div class="section"><img src="https://i.ibb.co/7dBBCtkY/a5b2c08c-e8e2-4551-ada7-6bca5c5585b9.jpg" alt="Image 35"></div>
+<div class="section"><img src="https://i.ibb.co/qP2dmkM/ac60e0ad-9651-4d57-ab6d-52f5a0b8c1ed.jpg" alt="Image 36"></div>
+<div class="section"><img src="https://i.ibb.co/8VJFpFN/c70e1769-89b3-4c47-8f8a-0f3e7fae7850.jpg" alt="Image 37"></div>
+<div class="section"><img src="https://i.ibb.co/Nnt4Thrz/fbe2a11f-bd8a-4a65-989f-2e9e95766bef.jpg" alt="Image 38"></div>
+<div class="section"><img src="https://i.ibb.co/TxPgC0Kv/242f56ec-89d7-4cdf-b38e-816b6c63520e.jpg" alt="Image 39"></div>
+<div class="section"><img src="https://i.ibb.co/1fktDjmW/115c8c33-2d43-4112-b5d1-26416626bc90.jpg" alt="Image 40"></div>
+<div class="section"><img src="https://i.ibb.co/DPmKqmW5/8e3094c2-ece0-4ec3-aa57-1087d80ee0e6.jpg" alt="Image 41"></div>
+<div class="section"><img src="https://i.ibb.co/xqp0fcbQ/f6906bb9-be6c-4940-b0c5-17bf1cd02884.jpg" alt="Image 42"></div>
+<div class="section"><img src="https://i.ibb.co/vxFSG9hH/5ce223a9-740c-4eb7-b9aa-03e328a64d37.jpg" alt="Image 43"></div>
+<div class="section"><img src="https://i.ibb.co/1f9xPxN9/69c393dd-99b7-4f6e-8fc3-3cb05f5ec150.jpg" alt="Image 44"></div>
+<div class="section"><img src="https://i.ibb.co/60SG2SgC/ee646929-7506-4283-951b-d457d85d6209.jpg" alt="Image 45"></div>
+<div class="section"><img src="https://i.ibb.co/KpPBfZ3N/900f3c17-723a-4b23-83ed-8e6ea7daf311.jpg" alt="Image 46"></div>
+<div class="section"><img src="https://i.ibb.co/4RSztJWj/962db2af-09c0-4fae-a0f0-7121a85cb476.jpg" alt="Image 47"></div>
+<div class="section"><img src="https://i.ibb.co/0jXdxqHW/5f0206e9-ddbc-4867-bdb0-8acef9420962.jpg" alt="Image 48"></div>
+<div class="section"><img src="https://i.ibb.co/hRwJVxbh/88760005-dd6f-4a33-a5db-26574d70d1ea.jpg" alt="Image 49"></div>
+<div class="section"><img src="https://i.ibb.co/M5gPXtKy/be3d0c85-8648-421a-8d63-d9077b217475.jpg" alt="Image 50"></div>
+<div class="section"><img src="https://i.ibb.co/WWL3XTmY/1e478ba6-0281-4fb1-a6bd-3baae3037b06.jpg" alt="Image 51"></div>
+<div class="section"><img src="" alt="Image 52"></div>
+<div class="section"><img src="" alt="Image 53"></div>
+<div class="section"><img src="" alt="Image 54"></div>
+<div class="section"><img src="" alt="Image 55"></div>
+<div class="section"><img src="" alt="Image 56"></div>
+<div class="section"><img src="" alt="Image 57"></div>
+<div class="section"><img src="" alt="Image 58"></div>
+<div class="section"><img src="" alt="Image 59"></div>
+<div class="section"><img src="" alt="Image 60"></div>
+<div class="section"><img src="" alt="Image 61"></div>
+<div class="section"><img src="" alt="Image 62"></div>
+<div class="section"><img src="" alt="Image 63"></div>
+<div class="section"><img src="" alt="Image 64"></div>
+<div class="section"><img src="" alt="Image 65"></div>
+<div class="section"><img src="" alt="Image 66"></div>
+<div class="section"><img src="" alt="Image 67"></div>
+<div class="section"><img src="" alt="Image 68"></div>
+<div class="section"><img src="" alt="Image 69"></div>
+<div class="section"><img src="" alt="Image 70"></div>
+<div class="section"><img src="" alt="Image 71"></div>
+<div class="section"><img src="" alt="Image 72"></div>
+<div class="section"><img src="" alt="Image 73"></div>
+<div class="section"><img src="" alt="Image 74"></div>
+<div class="section"><img src="" alt="Image 75"></div>
+<div class="section"><img src="" alt="Image 76"></div>
+<div class="section"><img src="" alt="Image 77"></div>
+<div class="section"><img src="" alt="Image 78"></div>
+<div class="section"><img src="" alt="Image 79"></div>
+<div class="section"><img src="" alt="Image 80"></div>
+<div class="section"><img src="" alt="Image 81"></div>
+<div class="section"><img src="" alt="Image 82"></div>
+<div class="section"><img src="" alt="Image 83"></div>
+<div class="section"><img src="" alt="Image 84"></div>
+<div class="section"><img src="" alt="Image 85"></div>
+<div class="section"><img src="" alt="Image 86"></div>
+<div class="section"><img src="" alt="Image 87"></div>
+<div class="section"><img src="" alt="Image 88"></div>
+<div class="section"><img src="" alt="Image 89"></div>
+<div class="section"><img src="" alt="Image 90"></div>
+<div class="section"><img src="" alt="Image 91"></div>
+<div class="section"><img src="" alt="Image 92"></div>
+<div class="section"><img src="" alt="Image 93"></div>
+<div class="section"><img src="" alt="Image 94"></div>
+<div class="section"><img src="" alt="Image 95"></div>
+<div class="section"><img src="" alt="Image 96"></div>
+<div class="section"><img src="" alt="Image 97"></div>
+<div class="section"><img src="" alt="Image 98"></div>
+<div class="section"><img src="" alt="Image 99"></div>
+<div class="section"><img src="" alt="Image 100"></div>
+
+
+</body>
+</html>
