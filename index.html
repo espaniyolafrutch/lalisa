@@ -14,26 +14,27 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
+    height: 100%;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    background: #000;
+    overflow-x: hidden;
 }
 
 body {
-    background: #111; /* clean background for PC side spaces */
     font-family: 'Pacifico', cursive;
-    overflow-x: hidden;
 }
 
 /* Floating Pink Title */
 .title {
     position: fixed;
-    top: 20px;
+    top: 15px;
     width: 100%;
     text-align: center;
     font-size: 65px;
     color: #ff4da6;
-    text-shadow: 0 0 20px rgba(255, 20, 147, 0.8);
+    text-shadow: 0 0 25px rgba(255, 20, 147, 0.9);
     z-index: 1000;
     animation: float 3s ease-in-out infinite;
     pointer-events: none;
@@ -45,43 +46,36 @@ body {
     100% { transform: translateY(0px); }
 }
 
-/* Fullscreen Scroll Sections */
+/* Fullscreen Sections */
 .section {
     height: 100vh;
     width: 100%;
     scroll-snap-align: start;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    animation: fadeIn 1s ease forwards;
 }
 
+/* Make image fully cover screen (no gaps between sections) */
 .section img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;   /* NO CROPPING */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* fills screen completely */
+    display: block;
 }
 
-/* Smooth fade effect */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Mobile */
+/* Mobile title size */
 @media (max-width: 768px) {
     .title {
         font-size: 42px;
     }
 }
-
 </style>
 </head>
 
 <body>
 
 <div class="title">Lisa 💖</div>
+
+<!-- Your 100 Images (No Gaps Between Them) -->
 
 <!-- IMAGE 1 -->
 <div class="section">
@@ -174,56 +168,109 @@ body {
 <div class="section"><img src="https://i.ibb.co/hRwJVxbh/88760005-dd6f-4a33-a5db-26574d70d1ea.jpg" alt="Image 49"></div>
 <div class="section"><img src="https://i.ibb.co/M5gPXtKy/be3d0c85-8648-421a-8d63-d9077b217475.jpg" alt="Image 50"></div>
 <div class="section"><img src="https://i.ibb.co/WWL3XTmY/1e478ba6-0281-4fb1-a6bd-3baae3037b06.jpg" alt="Image 51"></div>
-<div class="section"><img src="" alt="Image 52"></div>
-<div class="section"><img src="" alt="Image 53"></div>
-<div class="section"><img src="" alt="Image 54"></div>
-<div class="section"><img src="" alt="Image 55"></div>
-<div class="section"><img src="" alt="Image 56"></div>
-<div class="section"><img src="" alt="Image 57"></div>
-<div class="section"><img src="" alt="Image 58"></div>
-<div class="section"><img src="" alt="Image 59"></div>
-<div class="section"><img src="" alt="Image 60"></div>
-<div class="section"><img src="" alt="Image 61"></div>
-<div class="section"><img src="" alt="Image 62"></div>
-<div class="section"><img src="" alt="Image 63"></div>
-<div class="section"><img src="" alt="Image 64"></div>
-<div class="section"><img src="" alt="Image 65"></div>
-<div class="section"><img src="" alt="Image 66"></div>
-<div class="section"><img src="" alt="Image 67"></div>
-<div class="section"><img src="" alt="Image 68"></div>
-<div class="section"><img src="" alt="Image 69"></div>
-<div class="section"><img src="" alt="Image 70"></div>
-<div class="section"><img src="" alt="Image 71"></div>
-<div class="section"><img src="" alt="Image 72"></div>
-<div class="section"><img src="" alt="Image 73"></div>
-<div class="section"><img src="" alt="Image 74"></div>
-<div class="section"><img src="" alt="Image 75"></div>
-<div class="section"><img src="" alt="Image 76"></div>
-<div class="section"><img src="" alt="Image 77"></div>
-<div class="section"><img src="" alt="Image 78"></div>
-<div class="section"><img src="" alt="Image 79"></div>
-<div class="section"><img src="" alt="Image 80"></div>
-<div class="section"><img src="" alt="Image 81"></div>
-<div class="section"><img src="" alt="Image 82"></div>
-<div class="section"><img src="" alt="Image 83"></div>
-<div class="section"><img src="" alt="Image 84"></div>
-<div class="section"><img src="" alt="Image 85"></div>
-<div class="section"><img src="" alt="Image 86"></div>
-<div class="section"><img src="" alt="Image 87"></div>
-<div class="section"><img src="" alt="Image 88"></div>
-<div class="section"><img src="" alt="Image 89"></div>
-<div class="section"><img src="" alt="Image 90"></div>
-<div class="section"><img src="" alt="Image 91"></div>
-<div class="section"><img src="" alt="Image 92"></div>
-<div class="section"><img src="" alt="Image 93"></div>
-<div class="section"><img src="" alt="Image 94"></div>
-<div class="section"><img src="" alt="Image 95"></div>
-<div class="section"><img src="" alt="Image 96"></div>
-<div class="section"><img src="" alt="Image 97"></div>
-<div class="section"><img src="" alt="Image 98"></div>
-<div class="section"><img src="" alt="Image 99"></div>
-<div class="section"><img src="" alt="Image 100"></div>
 
+<!-- Continue same pattern -->
+
+<div class="section"><img src="" alt="11"></div>
+<div class="section"><img src="" alt="12"></div>
+<div class="section"><img src="" alt="13"></div>
+<div class="section"><img src="" alt="14"></div>
+<div class="section"><img src="" alt="15"></div>
+<div class="section"><img src="" alt="16"></div>
+<div class="section"><img src="" alt="17"></div>
+<div class="section"><img src="" alt="18"></div>
+<div class="section"><img src="" alt="19"></div>
+<div class="section"><img src="" alt="20"></div>
+
+<!-- Repeat until 100 -->
+
+<div class="section"><img src="" alt="21"></div>
+<div class="section"><img src="" alt="22"></div>
+<div class="section"><img src="" alt="23"></div>
+<div class="section"><img src="" alt="24"></div>
+<div class="section"><img src="" alt="25"></div>
+<div class="section"><img src="" alt="26"></div>
+<div class="section"><img src="" alt="27"></div>
+<div class="section"><img src="" alt="28"></div>
+<div class="section"><img src="" alt="29"></div>
+<div class="section"><img src="" alt="30"></div>
+
+<div class="section"><img src="" alt="31"></div>
+<div class="section"><img src="" alt="32"></div>
+<div class="section"><img src="" alt="33"></div>
+<div class="section"><img src="" alt="34"></div>
+<div class="section"><img src="" alt="35"></div>
+<div class="section"><img src="" alt="36"></div>
+<div class="section"><img src="" alt="37"></div>
+<div class="section"><img src="" alt="38"></div>
+<div class="section"><img src="" alt="39"></div>
+<div class="section"><img src="" alt="40"></div>
+
+<div class="section"><img src="" alt="41"></div>
+<div class="section"><img src="" alt="42"></div>
+<div class="section"><img src="" alt="43"></div>
+<div class="section"><img src="" alt="44"></div>
+<div class="section"><img src="" alt="45"></div>
+<div class="section"><img src="" alt="46"></div>
+<div class="section"><img src="" alt="47"></div>
+<div class="section"><img src="" alt="48"></div>
+<div class="section"><img src="" alt="49"></div>
+<div class="section"><img src="" alt="50"></div>
+
+<div class="section"><img src="" alt="51"></div>
+<div class="section"><img src="" alt="52"></div>
+<div class="section"><img src="" alt="53"></div>
+<div class="section"><img src="" alt="54"></div>
+<div class="section"><img src="" alt="55"></div>
+<div class="section"><img src="" alt="56"></div>
+<div class="section"><img src="" alt="57"></div>
+<div class="section"><img src="" alt="58"></div>
+<div class="section"><img src="" alt="59"></div>
+<div class="section"><img src="" alt="60"></div>
+
+<div class="section"><img src="" alt="61"></div>
+<div class="section"><img src="" alt="62"></div>
+<div class="section"><img src="" alt="63"></div>
+<div class="section"><img src="" alt="64"></div>
+<div class="section"><img src="" alt="65"></div>
+<div class="section"><img src="" alt="66"></div>
+<div class="section"><img src="" alt="67"></div>
+<div class="section"><img src="" alt="68"></div>
+<div class="section"><img src="" alt="69"></div>
+<div class="section"><img src="" alt="70"></div>
+
+<div class="section"><img src="" alt="71"></div>
+<div class="section"><img src="" alt="72"></div>
+<div class="section"><img src="" alt="73"></div>
+<div class="section"><img src="" alt="74"></div>
+<div class="section"><img src="" alt="75"></div>
+<div class="section"><img src="" alt="76"></div>
+<div class="section"><img src="" alt="77"></div>
+<div class="section"><img src="" alt="78"></div>
+<div class="section"><img src="" alt="79"></div>
+<div class="section"><img src="" alt="80"></div>
+
+<div class="section"><img src="" alt="81"></div>
+<div class="section"><img src="" alt="82"></div>
+<div class="section"><img src="" alt="83"></div>
+<div class="section"><img src="" alt="84"></div>
+<div class="section"><img src="" alt="85"></div>
+<div class="section"><img src="" alt="86"></div>
+<div class="section"><img src="" alt="87"></div>
+<div class="section"><img src="" alt="88"></div>
+<div class="section"><img src="" alt="89"></div>
+<div class="section"><img src="" alt="90"></div>
+
+<div class="section"><img src="" alt="91"></div>
+<div class="section"><img src="" alt="92"></div>
+<div class="section"><img src="" alt="93"></div>
+<div class="section"><img src="" alt="94"></div>
+<div class="section"><img src="" alt="95"></div>
+<div class="section"><img src="" alt="96"></div>
+<div class="section"><img src="" alt="97"></div>
+<div class="section"><img src="" alt="98"></div>
+<div class="section"><img src="" alt="99"></div>
+<div class="section"><img src="" alt="100"></div>
 
 </body>
 </html>
